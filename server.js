@@ -8,7 +8,7 @@ const { handleError } = require("./utils/handleErrors");
 const app = express();
 const PORT = process.env.PORT||8181;
 
-app.use(cors);
+app.use(cors); 
 app.use(logger);
 app.use(express.json());
 app.use(router);
